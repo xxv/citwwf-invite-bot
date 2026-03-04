@@ -111,6 +111,7 @@ client.on('interactionCreate', async interaction => {
       // Token is valid. Assign the role.
       const member = await interaction.guild.members.fetch(interaction.user.id);
       await member.roles.add(process.env.ROLE_ID);
+      await member.roles.remove(process.env.LOBBY_ROLE_ID);
 
       // Update the Google Sheet
       const rowNumber = targetRowIndex + 1; 
