@@ -1,0 +1,16 @@
+{
+  "name": "citwwf-discord-bot",
+  "version": "1.0.0",
+  "description": "Automated Discord role assignment via Google Sheets",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.0",
+    "dotenv": "^16.4.0",
+    "googleapis": "^144.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
